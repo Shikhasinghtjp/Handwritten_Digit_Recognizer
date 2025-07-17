@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handwritten Digit Recognizer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Handwritten Digit Recognizer</h1>
+
+      <div class="form-sections">
+    <!-- File Upload Section -->
+    <div class="form-box">
+        <h3> Upload Digit Image</h3>
+        <form method="POST" action="/" enctype="multipart/form-data">
+            <label>Select an image file:</label>
+            <input type="file" name="file" accept="image/*" class="file-input">
+            <button type="submit">Predict from File</button>
+        </form>
+    </div>
+
+    <!-- Canvas Draw Section -->
+    <div class="form-box">
+        <h3> Draw Digit</h3>
+        <form method="POST" action="/canvas" id="canvasForm">
+            <label>Draw on the canvas below:</label>
+            <canvas id="canvas" width="280" height="280"></canvas>
+            <input type="hidden" name="canvas_data" id="canvas_data">
+            <div class="button-group">
+                <button type="submit">Predict from Canvas</button>
+                <button type="button" onclick="clearCanvas()">Clear</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+        {% if prediction is not none %}
+            <div class="result">
+                <h2>Predicted Digit: {{ prediction }}</h2>
+                <p>Confidence: {{ '{:.2f}%'.format(confidence * 100) }}</p>
+            </div>
+        {% endif %}
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
