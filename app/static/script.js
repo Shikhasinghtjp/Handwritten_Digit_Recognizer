@@ -61,3 +61,7 @@ document.getElementById("canvasForm").addEventListener("submit", function (e) {
     const imageData = canvas.toDataURL("image/png");
     document.getElementById("canvas_data").value = imageData;
 });
+
+
+
+
