@@ -2,15 +2,10 @@
 
 This is a web-based Handwritten Digit Recognition application built using **Flask**, **HTML/CSS/JS**, and a trained **CNN model on MNIST dataset**. Users can either upload an image of a digit or draw directly on canvas, and the model will predict the digit with confidence score.
 
-![digit-demo](https://github.com/Shikhasinghtjp/Handwritten_Digit_Recognizer/assets/your-screenshot-path)
-
 ---
 
 ## 🚀 Live Demo
 
-🔗 [Click here to try the live app](https://your-deployment-url.com)
-
-> *(Replace with actual URL after deployment)*
 
 ---
 
@@ -69,12 +64,14 @@ This is a web-based Handwritten Digit Recognition application built using **Flas
 ---
 
 📝 License
+
 This project is licensed under the MIT License.
 Feel free to use, modify and share it.
 
 ---
 
 🙋‍♀️ Author
+
 Shikha Singh Thakur
 📧 LinkedIn
 
