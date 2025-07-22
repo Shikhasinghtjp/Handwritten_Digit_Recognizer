@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request
-from .predict import predict_digit
+from predict import predict_digit
 from PIL import Image
 import base64
 import io

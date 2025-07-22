@@ -1,6 +1,8 @@
 # 🧠 Handwritten Digit Recognizer
 
-This is a web-based Handwritten Digit Recognition application built using **Flask**, **HTML/CSS/JS**, and a trained **CNN model on MNIST dataset**. Users can either upload an image of a digit or draw directly on canvas, and the model will predict the digit with confidence score.
+This is a web-based Handwritten Digit Recognition application built using **Flask**, **HTML/CSS/JS**,
+and a trained **CNN model on MNIST dataset**. Users can either upload an image of a digit or draw directly on canvas,
+and the model will predict the digit with confidence score.
 
 ---
 
