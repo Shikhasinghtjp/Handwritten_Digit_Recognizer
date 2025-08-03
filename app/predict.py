@@ -4,13 +4,17 @@ from tensorflow.keras.preprocessing import image
 from PIL import Image, ImageOps
 
 # Load model once
-model = load_model('../model/mnist_cnn.h5')
+import os
+model_path = os.path.join(os.path.dirname(__file__), '..', 'model', 'mnist_cnn.h5')
+model_path = os.path.abspath(model_path)
+model = load_model(model_path)
+
 
 
 def predict_digit(img):
-    # Convert to grayscale and resize
-    img = img.convert('L')  # grayscale
-    img = ImageOps.invert(img)  # make black digit on white
+
+    img = img.convert('L')
+    img = ImageOps.invert(img)
     img = img.resize((28, 28))
     img = np.array(img) / 255.0
     img = img.reshape(1, 28, 28, 1)
