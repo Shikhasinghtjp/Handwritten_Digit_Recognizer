@@ -10,6 +10,7 @@ and the model will predict the digit with confidence score.
  
 https://handwritten-digit-recognizer-cj36.onrender.com
 
+
 ---
 
 ## 💡 Features
