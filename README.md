@@ -7,7 +7,8 @@ and the model will predict the digit with confidence score.
 ---
 
 ## 🚀 Live Demo
-
+ 
+https://handwritten-digit-recognizer-cj36.onrender.com
 
 ---
 
@@ -59,12 +60,6 @@ and the model will predict the digit with confidence score.
 
 ---
 
-📸 Screenshots
-
-
-
----
-
 📝 License
 
 This project is licensed under the MIT License.
@@ -75,6 +70,9 @@ Feel free to use, modify and share it.
 🙋‍♀️ Author
 
 Shikha Singh Thakur
+
 📧 LinkedIn
+
+https://www.linkedin.com/in/shikha-singh-thakur-07210a211/
 
 
